@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>progect</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="slidemenu.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="tinyfader.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style type="text/css">
+strong
+{
+font-size:18px;
+      font-weight:bold;
+	  font-family:"Georgia", Times, sans-serif;
+}
+
+</style>
+</head>
+
+<body onload="slideMenu.build('sm',200,10,10,1)">
+
+<div id="repeated_back"></div>
+<div id="center">
+	<div id="background_head_over"></div>
+	<div id="background_repeat_down"></div>
+
+	<div id="background_logo"></div>
+	
+	<div id="menu">
+		<ul id="sm" class="sm">
+			<li><a href="index.html"><img src="images/b1.gif" alt="" /></a></li>
+			<li><a href="Media.html"><img src="images/b2.gif" alt="" /></a></li>
+			<li><a href="canvas.html"><img src="images/b3.gif" alt="" /></a></li>
+			<li><a href="doctype.html"><img src="images/b4.gif" alt="" /></a></li>
+			<li><a href="formi.html"><img src="images/b5.gif" alt="" /></a></li>
+			
+		</ul>
+		
+	</div>
+	
+	<div id="smallwinone" class="text">
+	<br/><strong >Лесно начало</strong><br/>
+	Предишни версии на HTML дефинират няколко DOCTYPE-a и избирането на този, който ти е нужен, може да
+	бъде малко по-трудно. Новият DOCTYPE е следният: &lt;!DOCTYPE html&gt;.
+	В старите версии на HTML  записваме:<br/>
+	&lt;html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"&gt;<br/>
+	Атрибутът xmlns показва, че тази страница е в XHTML namespace, http://www.w3.org/1999/xhtml
+	(изискване на XHTML 1.0).  
+	Елементите в HTML 5 са винаги в този namespace, тъй че този атрибут може да бъде пропуснат. Другите
+	два атрибута определят езика на страницата. Тъй като изобразяват едно и също нещо (отново заради XHTML),
+	в HTML 5 остава само lang: &lt;html lang="en"&gt;. 
+	Мета тагът, дефиниращ кодирането също се променя :<br/>&lt;meta charset="utf-8"/&gt;.<br/><br/>
+	<strong>Нови семантични елементи:</strong><br/>
+	&lt;article&gt; - представя независим документ, подобен на блог или статия от вестник<br/>
+	&lt;section&gt; - разделя по-важните части от документа, например глави,заглавия и други<br/>
+	
+	</div>
+	
+	<div id="smallwintwo" class="text">
+
+	<br/>
+	&lt;header&gt; - представлява въведение в статията или заглавие<br/>
+	&lt;footer&gt; - изобразява се след статията, най-често съдържа информация за автора и дата на публикуване<br/>
+	&lt;nav&gt; - навигация на страницата<br/>
+	&lt;aside&gt; - представя съдържание, което има някакво отношение към останалата част от документа<br/>
+	&lt;hgroup&gt; - групира заглавието и подзаглавието на темата<br/>
+	&lt;mark&gt; - дефинира маркиран текст; например ако искаме да подчертаем части от текста<br/>
+	&lt;time&gt; - дефинира час или дата, или и двете<br/>
+	&lt;figure&gt; - групира елементи; <br/>
+	&lt;figcaption&gt; - дефинира заглавие на групата от елементи, определени от figure<br/>
+    <br/>
+	<strong>Local Storage</strong> в HTML 5 има 2 метода за съхраняване на данни: <br/>
+	<b>localStorage</b> - съхранява данните трайно ;<b>sessionStorage</b> - запазва информацията за времетраенето на една сесия.<br/>
+	Това са заместителите на Cookies - информацията се изпраща само,когато е необходима,а не при всеки request. 
+</div>
+
+	
+	
+	<div id="background_footer"></div>
+
+</div>
+
+
+</body>
+
+</html>

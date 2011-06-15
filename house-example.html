@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>A canvas rectangular example</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<meta charset="utf-8" />
+    <script>
+   function draw()
+ {
+    var context=document.getElementById('canvas').getContext('2d');
+	context.fillStyle='#996633';context.fillRect(70,70, 150, 150);
+	context.clearRect(130,168,30,50);context.clearRect(90,110,30,30);context.clearRect(170,110,30,30);
+	context.beginPath();
+		context.moveTo(70,70);
+		context.lineTo(145,20);context.lineTo(220,70);
+		context.fillStyle='#ff3300';context.fill();
+	context.closePath();
+	context.beginPath();
+		context.moveTo(220,70);
+		context.lineTo(250,50);context.lineTo(250,200);context.lineTo(220,220);
+		context.fillStyle="#663300";context.fill();
+	context.closePath();
+	context.beginPath();
+		context.moveTo(250,50);
+		context.lineTo(145,20);context.lineTo(220,70);
+		context.fillStyle='#cc3300';context.fill();
+	context.closePath();
+ }
+    </script>
+
+    <style>
+     
+      canvas,#explorer{ border: 2px solid #000; float: left; margin-right: 30px;background: #fff; margin-bottom: 20px; }
+      pre { float:left; display:block;overflow:scroll; background:#cccccc;width:550px; border: 1px solid #666; padding: 15px 20px; margin: 0 0 10px 0; }
+    </style>
+  </head>
+  <body onload="draw();">
+  <div id="repeated_back"></div>
+  <div id="center">
+	<div id="background_head_over"></div>
+	<div id="background_repeat_down"></div>
+
+	<div id="background_logo"></div>
+  
+    <div id="container">
+      <canvas id="canvas" width="340" height="250"><div id="explorer">
+	  Вашият браузър не поддържа елемента canvas</div></canvas>
+      <pre>
+function draw()
+ {
+    var context=document.getElementById('canvas').getContext('2d');
+	context.fillStyle='#996633';context.fillRect(70,70, 150, 150);
+	context.clearRect(130,168,30,50);context.clearRect(90,110,30,30);context.clearRect(170,110,30,30);
+	context.beginPath();
+		context.moveTo(70,70);
+		context.lineTo(145,20);context.lineTo(220,70);
+		context.fillStyle='#ff3300';context.fill();
+	context.closePath();
+	context.beginPath();
+		context.moveTo(220,70);
+		context.lineTo(250,50);context.lineTo(250,200);context.lineTo(220,220);
+		context.fillStyle="#663300";context.fill();
+	context.closePath();
+	context.beginPath();
+		context.moveTo(250,50);
+		context.lineTo(145,20);context.lineTo(220,70);
+		context.fillStyle='#cc3300';context.fill();
+	context.closePath();
+ }
+      </pre>
+	  <a class="text2" style="padding-top:0px;font-size:25px;" href="canvas.html"><i>Връщане към &lt;canvas&gt;</i></a>
+    </div>
+	
+	<div id="background_footer"></div>
+
+</div>
+	
+  </body>
+</html>

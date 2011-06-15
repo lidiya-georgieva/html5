@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>progect</title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="slidemenu.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="tinyfader.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<style type="text/css">
+
+#background_footer{position:absolute;top:2220px;}
+#background_repeat_down{height:2300px;}
+#repeated_back{height:2362px;}
+strong,h2
+{
+      font-weight:bold;
+      color:#cc9999;
+	  font-family:"Georgia", Times, sans-serif;
+}
+strong{ font-size:18px; }
+h2{text-align:center}
+
+
+</style>
+
+</head>
+
+<body onload="slideMenu.build('sm',200,10,10,1)">
+
+<div id="repeated_back"></div>
+<div id="center">
+	<div id="background_head_over"></div>
+	<div id="background_repeat_down"></div>
+
+	<div id="background_logo"></div>
+	
+	<div id="menu">
+		<ul id="sm" class="sm">
+			<li><a href="index.html"><img src="images/b1.gif" alt="" /></a></li>
+			<li><a href="Media.html"><img src="images/b2.gif" alt="" /></a></li>
+			<li><a href="canvas.html"><img src="images/b3.gif" alt="" /></a></li>
+			<li><a href="doctype.html"><img src="images/b4.gif" alt="" /></a></li>
+			<li><a href="formi.html"><img src="images/b5.gif" alt="" /></a></li>
+			
+		</ul>
+		
+	</div>
+	
+	<div id="smallwinone" class="text3" style=""><br/>
+	   <div class="abzac" style="padding-top:7px">Част от новите свойства на HTML 5 е <strong>&lt;canvas&gt; </strong>елемента.
+	Той представлява растерно <br/>платно(без съдържание и собствена рамка) на нашата страница, където използвайки JavaScript, 
+	може да нарисуваме каквото си поискаме.HTML 5 дефинира множествофункции<b>(“the canvas API”)</b> за рисуване на графики,
+	създаване на gradient и други визуални ефекти по време на изпълнение на скрипта. Платното е зависимо от резолюцията на 
+	монитора.По подразбиране, ако не му се зададат височина и широчина, то получава стойности 300 за широчината и 150 за височината.
+	   </div>
+       <div class="abzac">Всеки canvas елемент има context,в който реално се извършва всичката работа. Сanvas 
+	елемента трябва да извика <b>getContext</b> метода с параметър <b>'2d'</b>, Функцията getContext() връща обект, 
+	който може да използва API-то за рисуване. Този обект се присвоява на променлива и се използва, когато искаме да викаме 
+	някоя от функциите за рисуване.
+	   </div>
+	   <div class="abzac">Canvas се поддържа от <strong>Firefox 3.0+; Safari 3.0+; Chrome 3.0+; Opera 10.0+; Iphone 1.0+; Android 1.0+;</strong>
+	  Internet Explorer не поддържа canvas, за повече информация относно алтернативите: <a href="http://code.google.com/p/explorercanvas/">excanvas</a></div>
+	</div>
+	
+	<div id="tallwinone" class="text3" >
+	<br/>
+	<h2> Цветове</h2>
+	    HTML 5 осигурява следните две свойства за прилагане на цветове върху форми:<br/>
+		<strong> fillStyle</strong> - запълва формата със зададения цвят (черен по подразбиране)<br/>
+		<strong>strokeStyle</strong> - очертава формата със зададения цвят (черен по подразбиране)
+	<h2>Рисуване на правоъгълник</h2> 
+	    Има цяла група от методи,посветени на изчертаването на правоъгълници:<br/>
+		<strong>fillRect(x, y, width, height)</strong> – рисува правоъгълник, запълнен с текущия fillStyle(по подразбиране цветът е черен)<br/>
+		<strong>strokeRect(x, y, width, height)</strong> - рисува правоъгълник, който не е запълнен,а очертан със strokeStyle<br/>
+		<strong>clearRect(x, y, width, height)</strong> - изтрива правоъгълник с дадените размери
+	<h2>Изчертаване на линии, пътеки, кръгове</h2>
+	    Посредством следните методи изобразяваме линия върху страницата (а чрез нея - много разнообразни форми):<br/>
+		<strong>moveTo(x,y)</strong>- премества началната точка на позицията, определена от x и y
+		<strong>lineTo(x,y)</strong>- начертава права линия, която започва от позицията, определена от moveTo
+	    (или последното място, което е завършила изчертаването) и завършва на указаните координати от параметрите си x и y<br/>
+		Note: Има няколко свойства за задаване стил на линия: lineWidth; lineCap; lineJoin; miterLimit.<br/>
+	    Всяка пътека трябва да започва с <strong>beginPath()</strong> и да завършва с <strong>closePath()</strong>.<br/>
+		<strong>fill()</strong>- запълва с цвят формите, изобразени посредством линии<br/>
+		<strong>stroke()</strong>- изобразява линиите<br/>
+	    За рисуване на кръгообразни форми имаме следния метод:<br/>
+		<strong> arc(x, y, radius, startAngle, endAngle, anticlockwise)</strong> - (x,y) представляват координатите на началната позиция,започване от 
+		startAngle и завършваме на endAngle, radius е дължината на радиуса и последният параметър приема true/false в зависимост от посоката на въртене
+	<h2>Създаване на gradient</h2>
+	    <strong>addColorStop(offset, color)</strong> - добавяне на цвят;offset се движи между 0 и 1, като 0 е най-лявата точка по остта X, 
+		а 1 е най-дясната по същата ос. <br/>
+		С canvas можем да генерираме два типа градиенти - линеен и радиален:
+	    <strong>createLinearGradient(x0, y0, x1, y1)</strong> - задаваме начална и крайна позиция
+	    <strong>createRadialGradient(x0, y0, r0, x1, y1, r1)</strong> - освен начална и крайна позиция, имаме и радиус на въртене
+	<h2>Текст</h2>
+		Освен изобразяване на форми, чрез canvas може да изобразим и текст. За разлика от текста в самата страница, за този в canvas няма CSS, няма box model.
+		Следните атрибути за фон са на разположение:<br/>
+        <strong>font [ = value ] </strong>- включва font style, font variant, font weight, font size, line height, font family (като в CSS)<br/>
+		<strong>textAlign [ = value ]</strong> - подравняване на текст; възможни стойности: start, end, left, right, center<br/>
+		<strong>textBaseline [ = value ]</strong> - контролира разположението на текста спрямо началната позиция; възможни стойности: 
+		top, hanging, middle , alphabetic, ideographic and bottom<br/>
+		<strong>fillText(text, x, y [, maxWidth ] )</strong> - запълва дадения текст от стартиращата позиция (х,у)<br/>
+		<strong>strokeText(text, x, y [, maxWidth ] )</strong> - очертава дадения текст от стартиращата позиция (х,у)<br/>
+	</div>
+
+	<div id="picframeone">
+	<br/>
+	  <a href="house-example.html" target="_self"><img src="screenshots/house.jpg" alt="primer 1" /></a>
+	</div>
+	
+	<div id="picframetwo">
+	<br/>
+	  <a href="lineargradient.html" target="_self"><img src="screenshots/lineargrad.jpg" alt="primer 2" /></a>
+	</div>
+	
+	<div id="picframethree">
+	<br/>
+	  <a href="canvas-all-example.html" target="_self"><img src="screenshots/snowman.jpg" alt="primer 3" /></a>
+	</div>
+	
+	
+	<div id="background_footer"></div>
+
+
+</div>
+
+</body>
+
+</html>

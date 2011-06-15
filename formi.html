@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>progect</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="index.css" />
+<script type="text/javascript" src="slidemenu.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="tinyfader.js"></script>
+
+<style type="text/css">
+
+#background_footer{position:absolute;top:1420px;}
+#background_repeat_down{height:1500px;}
+#repeated_back{height:1562px;}
+#picframeone{padding-left:20px;width:450px;}
+#picframetwo{padding-left:20px;width:450px;}
+
+</style>
+
+</head>
+
+<body onload="slideMenu.build('sm',200,10,10,1)">
+
+<div id="repeated_back"></div>
+<div id="center">
+	<div id="background_head_over"></div>
+	<div id="background_repeat_down"></div>
+
+	<div id="background_logo"></div>
+	
+	<div id="menu">
+		<ul id="sm" class="sm">
+			<li><a href="index.html"><img src="images/b1.gif" alt="" /></a></li>
+			<li><a href="Media.html"><img src="images/b2.gif" alt="" /></a></li>
+			<li><a href="canvas.html"><img src="images/b3.gif" alt="" /></a></li>
+			<li><a href="doctype.html"><img src="images/b4.gif" alt="" /></a></li>
+			<li><a href="formi.html"><img src="images/b5.gif" alt="" /></a></li>
+			
+		</ul>
+		
+	</div>
+	
+	<div id="smallwinone" class="text">
+	<br/>
+		"input" полета
+		<br/>
+
+		-required<br/>
+		-autofocus<br/>
+		-placeholder<br/>	
+		-type="email"<br/>	
+		-type="url"<br/>
+		-pattern
+
+	
+	</div>
+	
+	<div id="tallwintwo" class="text">
+		<br/>
+		Autofocus
+		<br/>
+		Това прави input полето, на което е сложен активно.
+		<br/>
+		&lt;input type="text" name="username" required="required" /&gt;<br/>
+		&lt;input type="password" name="password" autofocus="autofocus" /&gt;<br/>
+		<br/>
+		Pattern
+		<br/>
+		Чрез проверка подобна на preg_match в PHP може да се проверяват полетата. Естествено и тук трябва да се прави и проверка с PHP, защото не работи във всички браузъри.
+		<br/>
+		&lt;input type="username" name="username" pattern="[A-Za-z]{4,10}" /&gt;<br/>
+		<br/>
+		Placeholder
+		<br/>
+		Може би едно от най-вълнуващите нововъведения, с която може да напишете нещо в полето и когато цъкнете с мишката върху него то се маха.
+		<br/>
+		&lt;input type="text" name="username" placeholder="Вашето име" /&gt;<br/>
+		<br/>
+		type="email"
+		<br/>
+		Нов тип поле за въвеждане на email адрес. Ако не се въведе валиден email формата не се изпраща. И тук отново трябва да си правим проверката и чрез PHP, защото все още не се поддържа от всички браузъри.
+		<br/>
+		&lt;input type="email" name="email" /&gt;<br/>
+	</div>
+
+	<div id="picframeone" class="text">
+		<br/>
+		Това прави input полетата задължителни. Естествено трябва да си правите проверката и чрез php, защото това не работи във всички браузъри.
+		<br/>
+		&lt;input type="text" name="username" required="required" /&gt;
+	
+	</div>
+	
+	<div id="picframetwo" class="text">
+		<br/>
+		type="url"
+		<br/>
+		Нов тип поле за въвеждане на url адрес. Ако не се въведе валиден url формата не се изпраща. И тук отново трябва да си правим проверката и чрез PHP, защото все още не се поддържа от всички браузъри. За валиден се зачита адрес, който започва с http://
+		<br/>
+		&lt;input type="url" name="url" /&gt;
+	
+	</div>
+	
+	<div id="background_footer"></div>
+
+
+</div>
+
+</body>
+
+</html>

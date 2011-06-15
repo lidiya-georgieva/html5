@@ -1,0 +1,65 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A canvas rectangular example</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<meta charset="utf-8" />
+    <script>
+   function draw()
+	{
+	    var ctx=document.getElementById('canvas').getContext('2d');
+	    var my_grad=ctx.createLinearGradient(0,0,300,300);
+	    my_grad.addColorStop(0.15,'yellow');
+		my_grad.addColorStop(0.3, 'red');
+		my_grad.addColorStop(0.6, 'green');
+		my_grad.addColorStop(0.8, 'blue');
+		my_grad.addColorStop(0.9,'#993399');
+	    ctx.fillStyle=my_grad;ctx.fillRect(25,25,300,300);
+	    ctx.strokeRect(25,25,300,300);
+	}
+    </script>
+
+    <style>
+      
+      canvas,#explorer{ border: 2px solid #000; float: left; margin-right: 50px;background: #fff; margin-bottom: 20px; }
+      pre { float:left; display:block;overflow:scroll;width:550px;; background:#cccccc; border: 1px solid #666;padding-top:10px; }
+    </style>
+  </head>
+  <body onload="draw();">
+  <div id="repeated_back"></div>
+  <div id="center">
+	<div id="background_head_over"></div>
+	<div id="background_repeat_down"></div>
+
+	<div id="background_logo"></div>
+  
+    <div id="container">
+      <canvas id="canvas" width="350" height="350"><div id="explorer">
+	  Вашият браузър не поддържа елемента canvas</div></canvas>
+	  	
+      <pre>
+	function draw()
+	{
+	    var ctx=document.getElementById('canvas').getContext('2d');
+	    var my_grad=ctx.createLinearGradient(0,0,300,300);
+	    my_grad.addColorStop(0.15,'yellow');
+		my_grad.addColorStop(0.3, 'red');
+		my_grad.addColorStop(0.6, 'green');
+		my_grad.addColorStop(0.8, 'blue');
+		my_grad.addColorStop(0.9,'#993399');
+	    ctx.fillStyle=my_grad;ctx.fillRect(25,25,300,300);
+	    ctx.strokeRect(25,25,300,300);
+	}
+      </pre>
+	  
+	  <a class="text2" style="float:left;padding-top:50px;font-size:25px;" href="canvas.html"><i>Връщане към &lt;canvas&gt;</i></a>
+
+    </div>
+
+	<div id="background_footer"></div>
+
+</div>
+	
+  </body>
+</html>
